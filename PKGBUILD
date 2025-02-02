@@ -7,8 +7,7 @@ pkgver=1.7.0
 pkgrel=1
 arch=('any')
 license=('GPL')
-depends=(grub lsb-release)
-optdepends=(os-prober)
+depends=(grub)
 
 url=https://github.com/KittehCream/$pkgname
 _url="https://raw.githubusercontent.com/KittehCream/$pkgname/refs/heads/main"
