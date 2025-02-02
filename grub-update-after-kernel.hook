@@ -1,0 +1,12 @@
+[Trigger]
+Operation = Install
+Operation = Remove
+Type = Path
+Target = usr/lib/modules/*/vmlinuz
+Target = usr/lib/modules-load.d/*.conf
+
+[Action]
+Description = Update grub after installing or removing a kernel or module.
+When = PostTransaction
+Depends = grub
+Exec = /bin/sh -c "/usr/bin/grub-mkconfig -o /boot/grub/grub.cfg"
