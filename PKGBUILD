@@ -1,16 +1,16 @@
 # Old Maintainer: EndeavourOS-Team <info@endeavouros.com>
-# Maintainer: KittehCream <kittehcream@gmail.com>
+# Maintainer: Calliope System <calliopesystem@gmail.com>
 
 pkgname=grub-tools
-pkgdesc="Fixes, additions and enhancements to grub and os-prober."
+pkgdesc="Fixes, additions and enhancements to grub."
 pkgver=1.7.0
 pkgrel=1
 arch=('any')
 license=('GPL')
 depends=(grub)
 
-url=https://github.com/KittehCream/$pkgname
-_url="https://raw.githubusercontent.com/KittehCream/$pkgname/refs/heads/main"
+url=https://github.com/CalliopeSystem/$pkgname
+_url="https://raw.githubusercontent.com/CalliopeSystem/$pkgname/refs/heads/main"
 
 source=(
   $_url/grub-update-after-kernel.hook    # Automatically updates grub.cfg after a kernel or module is installed/uninstalled.
